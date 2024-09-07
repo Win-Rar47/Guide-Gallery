@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+}
+.gallery {
+    width: 95%;
+    padding: 10px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery button {
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 25px;
+}
+.gallery button a {
+    text-decoration: none;
+    color: black;
+}
+.picture {
+    display: flex;
+    scale: 103%;
+    width: 100%;
+    height: 88vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+.picture img {
+    border-radius: 8px;
+    margin: 12px;
+}
+.photo {
+    display: flex;
+    justify-content: flex-end;
+}
+.photo img {
+    width: 280px;
+
+}
+.width-photo img{
+    width: 595px;
+}
+.tall-photo {
+    margin-left: 4px;
+    margin-top: 4px;
+    scale: 101.5%;
+}
+@media only screen and (max-width:1399px) {
+     header {
+        padding: 0 0;
+     }
+     
+}
+@media only screen and (min-width:1400px) {
+     header {
+        padding: 0 190px;
+     }
+}
+@media only screen and (max-width:988px) {
+    .block2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        scale: 101%;
+        margin-left: 2px;
+    }
+}
+@media only screen and (max-width:360px){
+    .picture {
+        scale: 55%;
+        position: absolute;
+        top: -10%;
+        left: -70px;
+    }
+}
